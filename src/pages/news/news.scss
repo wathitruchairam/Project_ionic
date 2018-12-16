@@ -1,0 +1,10 @@
+page-news {
+    ion-title{
+        text-align: center;
+    }
+    .text-title{
+        background: linear-gradient(to left, #b92499 10%, #9141ac 100%);
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+    }
+}

@@ -14,3 +14,52 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after,.tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+    height: 2px;
+    bottom: 0px;
+    // background: linear-gradient(to left, #b92499 10%, #9141ac 100%);
+    background: linear-gradient(to left, #996515 10%,#ffdf00 40%, #9b6715 50%);
+}
+.toolbar-background-md{
+    background: linear-gradient(to left, #b92499 10%, #9141ac 100%);
+}
+.toolbar-title-md{
+    color: #ffffff;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+    color: #ffffff;
+}
+.list-md{
+    margin: 5px 0 16px;
+}
+// .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+//     background-color:#d0d0d0;
+// }
+// .tabs-md-light .tabbar{
+//     background: #8E24AA;
+// }
+.tabs-md-light .tab-button:hover:not(.disable-hover), .tabs-md-light .tab-button[aria-selected=true], .tabs-md-light .tab-button[aria-selected=true] .tab-button-icon{
+    color: #4865a7;
+}
+.ion-md-add-circle::before{
+    font-size: 51px;
+   background: linear-gradient(to left, #b92499 10%, #9141ac 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.list-header-md{
+    border-top: 0px solid #dedede;
+}
+.tabs-md .tabbar{
+    background-color: #ffffff;//สีแทปล่าง
+}
+
+
+
+
+.tabs-md .tab-button[aria-selected=true]{
+    color: #b92499;
+}
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon{
+    color: #b92499
+}

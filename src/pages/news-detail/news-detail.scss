@@ -1,0 +1,21 @@
+page-news-detail {
+    .main-contant{
+        padding: 10px;
+    }
+    
+    .settime{
+        font-family: 'Kanit', sans-serif;
+        font-size: 12px;
+    }
+    .text-title{
+        background: linear-gradient(to left, #b92499 10%, #9141ac 100%);
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+    }
+    .stripe-line{
+        background: url(../images/stripe.png);
+        height: 12px;
+        overflow: hidden;
+        margin-top: 7px;
+       }
+}

@@ -1,17 +1,42 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>หน้าแรก</ion-title>
   </ion-navbar>
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  <div class="d">
+    <ion-slides autoplay="5000" loop="true" pager>
+        <ion-slide>
+          <img src="images/images4.jpg">
+        </ion-slide>
+        <ion-slide>
+            <img src="images/images5.jpg">
+        </ion-slide>
+        <ion-slide>
+            <img src="images/images6.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="images/images7.jpg">
+      </ion-slide>
+      </ion-slides>
+    </div>
+      <ion-list >
+          <ion-list-header >
+            <div class="page-title" >
+              อัพเดทข่าว
+              </div> 
+            <div class="stripe-line"></div>
+          </ion-list-header>
+          <ion-item  *ngFor="let n of datalist" (click)="goDetail(n)">
+              <ion-thumbnail item-start>
+                  <img src="http://127.0.0.1/{{n.n_img}}"/>
+                </ion-thumbnail>
+                <h2 class="text-title">{{n.n_name}}</h2>
+                <p>{{n.n_description}}</p>
+                <p>{{n.timesave}}</p>
+          </ion-item>
+        </ion-list>
+
 </ion-content>

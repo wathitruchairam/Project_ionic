@@ -1,0 +1,26 @@
+<!--
+  Generated template for the NewsDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{listdetail.n_name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <img src="http://127.0.0.1/{{listdetail.n_img}}"/>
+  <div class="main-contant">
+      <h3 class="text-title">{{listdetail.n_name}}</h3>
+    <div class="text-content">
+    <div class="settime"><ion-icon name="time"> {{listdetail.timesave}}</ion-icon></div>
+    <div class="stripe-line"></div>
+    <p>{{listdetail.n_description}}</p>
+  </div>
+    </div>
+</ion-content>
